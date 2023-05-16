@@ -1,0 +1,1 @@
+Projeto inicial do curso com conceitos gerais do Django.
