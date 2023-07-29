@@ -158,6 +158,9 @@ h6 {
 
 .recipe img {
     max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .recipe-list-item {
@@ -243,12 +246,12 @@ h6 {
 }
 
 .main-content-detail .recipe-list-item:hover {
-    transform: scale(1.02);
-    box-shadow: -5px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .preparation-steps {
-   padding: var(--spacing-gutter-medium); 
+    padding: var(--spacing-gutter-medium);
 }
 
 .main-footer {
