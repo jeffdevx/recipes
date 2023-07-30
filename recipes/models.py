@@ -23,8 +23,10 @@ class Recipe(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
     cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
+    # Poderia ser on_delete=PROTECT também? 
+    # https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.PROTECT
     category = models.ForeignKey(
-        Category, on_delete=models.RESTRICT)  # Poderia ser on_delete=PROTECT também? https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.PROTECT
+        Category, on_delete=models.RESTRICT)
     author = models.ForeignKey(User, on_delete=models.RESTRICT)
 
     def __str__(self):

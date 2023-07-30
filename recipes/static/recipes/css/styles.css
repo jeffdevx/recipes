@@ -272,3 +272,23 @@ h6 {
 .main-footer a:hover {
     filter: brightness(0.8);
 }
+
+.preparation-steps :is(h1,h2,h3,h4,h5,h6,p,pre) {
+    margin: 2rem 0;
+}
+
+.preparation-steps :is(ol,ul) {
+    margin: 2rem;
+    padding: 0 2rem;
+}
+
+.center {
+    text-align: center;
+}
+.m-x {
+    margin: 0 var(--spacing-gutter-medium);
+}
+
+.m-y {
+    margin: var(--spacing-gutter-medium) 0;
+}
